@@ -16,16 +16,17 @@ main{
   height: 220px;
   padding: 0;
   margin: 20px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px 0 #0000002c;
   border-radius: 8px;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: #fff;
 }
 .card * {
   transition: 0.3s ease all;
 }
 .card img {
-  margin: 5px;
+  margin: 10px auto;
   width: 150px;
   height: 150px;
   object-fit: cover;
