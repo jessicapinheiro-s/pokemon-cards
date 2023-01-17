@@ -1,22 +1,32 @@
-main{
+main {
   display: flex;
 }
-.grupoCard{
-  width: 85%; 
+
+.grupoCard {
+  width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr  1fr 1fr ;
-  grid-template-areas: 
-  'card-first card-first card-first card-first card-first'
-  'card-second card-second card-second card-second card-second'
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'card-first card-first card-first card-first card-first'
+    'card-second card-second card-second card-second card-second'
 }
-.collectionColumn{
+
+.collectionColumn {
   width: 17%;
   margin-left: 25px;
-  margin-right: 5px ;
+  margin-right: 5px;
   display: inline-block;
 }
+
+.collectionColumn-1,
+.collectionColumn-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .card {
   width: 200px;
   height: 220px;
@@ -28,9 +38,11 @@ main{
   overflow: hidden;
   background-color: #fff;
 }
+
 .card * {
   transition: 0.3s ease all;
 }
+
 .card img {
   margin: 10px auto;
   width: 150px;
@@ -38,10 +50,12 @@ main{
   object-fit: cover;
   display: block;
 }
-.card a{
+
+.card a {
   padding: 5px;
   margin: 10px;
 }
+
 .card h3 {
   margin: 0;
   padding: 12px 12px 12px;
@@ -49,82 +63,105 @@ main{
   font-weight: 700;
   font-size: 20px;
 }
-.card h4{
+
+.card h4 {
   margin: 0;
   padding: 8px 12px 0px;
   font-weight: 600;
   font-size: 16px;
 }
+
 .card .focus-content {
   display: block;
   padding: 8px 12px;
 }
+
 .card p {
   margin: 0;
   line-height: 1;
 }
-.card:hover img, .card:focus-within img {
+
+.card:hover img,
+.card:focus-within img {
   margin-top: -80px;
 }
-.card:hover h3, .card:focus-within h3 {
+
+.card:hover h3,
+.card:focus-within h3 {
   padding: 8px 8px 0;
 }
-.efeito-flutuante{
+
+.efeito-flutuante {
   float: right;
   position: fixed;
   margin-top: 200px;
 }
-.efeito-flutuante  img {
+
+.efeito-flutuante img {
   width: 150px;
   animation: float 3s ease-in-out infinite;
 }
-nav ol, nav li, button a{
+
+nav ol,
+nav li,
+button a {
   list-style: none;
   text-decoration: none;
 }
-nav li{
+
+nav li {
   margin-bottom: 10px;
 }
-#btMenu{
+
+#btMenu {
   margin: auto;
   padding: 16px;
   width: 130px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-#btMenu:hover{
-  width:140px;
+
+#btMenu:hover {
+  width: 140px;
   right: 100%;
 }
-@keyframes swing {  /*animação*/
-    15% {
-      transform: translateX(5px);
-    }
-    30% {
-      transform: translateX(-5px);
-    }
-    50% {
-      transform: translateX(3px);
-    }
-    65% {
-      transform: translateX(-3px);
-    }
-    80% {
-      transform: translateX(2px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+
+@keyframes swing {
+
+  /*animação*/
+  15% {
+    transform: translateX(5px);
+  }
+
+  30% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  65% {
+    transform: translateX(-3px);
+  }
+
+  80% {
+    transform: translateX(2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
-@keyframes float{
-	0%,100%{
-		transform:translatey(0)
-	}
-	50%{
-		transform:translatey(-20px)
-	}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translatey(0)
+  }
+
+  50% {
+    transform: translatey(-20px)
+  }
 }
-
-
-
-
