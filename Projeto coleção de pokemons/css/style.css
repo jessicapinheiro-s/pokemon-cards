@@ -19,14 +19,17 @@ main {
   margin-right: 5px;
   display: inline-block;
 }
-.collectionColumn-1{
-  grid-area:card-first ;
+
+.collectionColumn-1 {
+  grid-area: card-first;
 
 }
-.collectionColumn-2{
-  grid-area:card-second ;
+
+.collectionColumn-2 {
+  grid-area: card-second;
 
 }
+
 .collectionColumn-1,
 .collectionColumn-2 {
   display: flex;
@@ -131,6 +134,18 @@ nav li {
 #btMenu:hover {
   width: 140px;
   right: 100%;
+}
+
+@media (max-width:600px) {
+  .collectionColumn-1,
+  .collectionColumn-2 {
+      display: block;
+      margin: auto;
+  }
+  .grupoCard{
+    grid-template-rows: 1fr;
+  }
+
 }
 
 @keyframes swing {
