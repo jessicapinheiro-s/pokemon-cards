@@ -29,14 +29,12 @@ main {
   grid-area: card-second;
 
 }
-
 .collectionColumn-1,
 .collectionColumn-2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .card {
   width: 200px;
   height: 220px;
@@ -48,11 +46,9 @@ main {
   overflow: hidden;
   background-color: #fff;
 }
-
 .card * {
   transition: 0.3s ease all;
 }
-
 .card img {
   margin: 10px auto;
   width: 150px;
@@ -60,12 +56,10 @@ main {
   object-fit: cover;
   display: block;
 }
-
 .card a {
   padding: 5px;
   margin: 10px;
 }
-
 .card h3 {
   margin: 0;
   padding: 12px 12px 12px;
@@ -73,69 +67,28 @@ main {
   font-weight: 700;
   font-size: 20px;
 }
-
 .card h4 {
   margin: 0;
   padding: 8px 12px 0px;
   font-weight: 600;
   font-size: 16px;
 }
-
 .card .focus-content {
   display: block;
   padding: 8px 12px;
 }
-
 .card p {
   margin: 0;
   line-height: 1;
 }
-
 .card:hover img,
 .card:focus-within img {
   margin-top: -80px;
 }
-
 .card:hover h3,
 .card:focus-within h3 {
   padding: 8px 8px 0;
 }
-
-.efeito-flutuante {
-  float: right;
-  position: fixed;
-  margin-top: 200px;
-}
-
-.efeito-flutuante img {
-  width: 150px;
-  animation: float 3s ease-in-out infinite;
-}
-
-nav ol,
-nav li,
-button a {
-  list-style: none;
-  text-decoration: none;
-}
-
-nav li {
-  margin-bottom: 10px;
-}
-
-#btMenu {
-  margin: auto;
-  padding: 16px;
-  width: 130px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-#btMenu:hover {
-  width: 140px;
-  right: 100%;
-}
-
 @media (max-width:600px) {
   .collectionColumn-1,
   .collectionColumn-2 {
@@ -145,8 +98,16 @@ nav li {
   .grupoCard{
     grid-template-rows: 1fr;
   }
-
+  footer{
+    width: 50%;
+    font-size: 0.600rem;
+  }
+  header{
+    width: 70%;
+  }
 }
+
+
 
 @keyframes swing {
 
