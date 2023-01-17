@@ -4,6 +4,12 @@ main{
 .grupoCard{
   width: 85%; 
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr  1fr 1fr ;
+  grid-template-areas: 
+  'card-first card-first card-first card-first card-first'
+  'card-second card-second card-second card-second card-second'
 }
 .collectionColumn{
   width: 17%;
