@@ -6,11 +6,11 @@ main {
   width: 85%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    'card-first card-first card-first card-first card-first'
-    'card-second card-second card-second card-second card-second'
+    'card-first '
+    'card-second'
 }
 
 .collectionColumn {
@@ -19,7 +19,14 @@ main {
   margin-right: 5px;
   display: inline-block;
 }
+.collectionColumn-1{
+  grid-area:card-first ;
 
+}
+.collectionColumn-2{
+  grid-area:card-second ;
+
+}
 .collectionColumn-1,
 .collectionColumn-2 {
   display: flex;
